@@ -1,0 +1,111 @@
+/* Mobile standaard */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .hamburger, .close {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #F67011;
+    font-weight: 600;
+  }
+  
+  /* overlay menu */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .menu-overlay.active {
+    left: 0;
+  }
+  
+  /* menu links */
+  .menu-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 4rem;
+  }
+  
+  .menu-links li {
+    margin: 1.5rem 0;
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 550;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* socials */
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: auto;
+  }
+  
+  .socials img {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row; /* naast elkaar vanaf tablet */
+    }
+  }
+  
+/* Desktop */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+  }
+
+  .nav-links li {
+    border: none;
+  }
+}
+  
