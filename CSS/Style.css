@@ -1,8 +1,31 @@
+@font-face {
+  font-family: "Celinda";
+  src: url("fonts/celinda-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular std Bold";
+  src: url("fonts/Circular/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular std Book";
+  src: url("fonts/Circular/CircularStd-Book.otf") format("opentype");
+}
+
+
+
 /* Mobile standaard */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Circular std Book', sans-serif;
+    font-size: 1rem;
   }
+
+p{
+  font-family: 'Circular std Book', sans-serif;
+  font-size: 1rem;
+}
   
 /* navbar */
 .navbar {
@@ -82,12 +105,121 @@ body {
     height: 30px;
   }
 
+  /* Hero section */
+  .hero {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text p {
+  margin: 0.5rem 0;
+}
+
+.hero h1 {
+  font-family: "Celinda", serif;
+  font-size: 2rem;
+  margin: 0 0;
+}
+
+.hero h1 .highlight {
+  color: #f97316; /* jouw oranje kleur */
+}
+
+.hero h2 {
+  font-family: "Circular std Bold", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero h3{
+  font-family: "Circular std Bold", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #f97316;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  border: 2px solid #f97316;
+  color: #f97316;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-socials img {
+  width: 28px;
+  height: 28px;
+}
+
+.hero-img {
+  flex: 0 0 auto; /* Zorg dat de afbeelding zijn eigen hoogte behoudt */
+  display: flex;
+  align-items: flex-start; /* Zorg dat de afbeelding bovenaan blijft */
+}
+
+.hero-img img {
+  width: 160px;
+}
+
+
 
   /* Tablet */
   @media (min-width: 768px) {
     .container {
-      flex-direction: row; /* naast elkaar vanaf tablet */
+      flex-direction: row;
     }
+
+      .hero {
+    flex-direction: row; /* zet tekst en foto naast elkaar */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1; /* neemt beschikbare ruimte */
+  }
+
+  .hero-img {
+    flex: 0 0 250px; /* vaste breedte voor foto */
+    margin-top: 0;   /* verwijder margin van mobile */
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 250px;
+  }
   }
   
 /* Desktop */
