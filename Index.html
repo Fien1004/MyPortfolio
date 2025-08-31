@@ -38,8 +38,8 @@
     <h1><span class="highlight">Fien Wouters</span></h1>
     <h2>UX & UI Designer</h2>
     <p class="description">
-      Lorem ipsum dolor sit amet consectetur. Gravida nisl velit ac nunc morbi id.
-      Nibh quam tellus etiam nunc. Commodo ut dui sollicitudin eget morbi mauris gravida enim id.
+      Een enthousiaste UX & UI Designer met een passie voor gebruiksvriendelijke en visueel sterke digitale ervaringen.
+Met oog voor detail en een creatieve aanpak breng ik ideeën tot leven in designs die zowel esthetisch als functioneel zijn.
     </p>
     <div class="hero-buttons">
       <a href="#contact" class="btn primary">📩 Contact</a>
@@ -60,28 +60,43 @@
 
 
   <!-- Over mij -->
-  <section id="about">
-    <h2>Over mij</h2>
-    <p>Korte tekst over wie je bent, wat je doet en waar je goed in bent.</p>
+<section class="about">
+  <h2>Over mij</h2>
+  <p>
+   Ik ben momenteel student Digital Experience Design aan Thomas More, waar ik mijn passie voor design verder ontwikkel.
+Wat mij motiveert, is het vinden van creatieve oplossingen voor complexe problemen. Ik hou van teamwork, maar kan evengoed zelfstandig aan de slag om projecten van begin tot eind uit te werken.
+Buiten design ben ik altijd nieuwsgierig om nieuwe tools en technieken te leren – zo blijf ik groeien als ontwerper én als persoon.
+  </p>
 
-    <h3>Education</h3> <p>2023 - Heden</p>
+  <!-- Education -->
+  <div class="education">
+    <h3>Education</h3>
+    <span class="badge">2023 - Heden</span>
     <p>Thomas More - Digital Experience Design</p>
+  </div>
 
+  <!-- Soft skills -->
+  <div class="skills soft-skills">
     <h3>Soft Skills</h3>
-    <ul>
-      <li>Teamwork</li>
-      <li>Flexibel</li>
-      <li>Probleemoplossend denken</li>
-      <li>Creatief</li>
-    </ul>
+    <div class="skills-grid">
+      <ul>
+        <li>Teamwork</li>
+        <li>Flexibel</li>
+      </ul>
+      <ul>
+        <li>Probleemoplossend denken</li>
+        <li>Creatief</li>
+      </ul>
+    </div>
+  </div>
 
     <h3>Hard Skills</h3>
     <div class="skills">
-      <img src="" alt="Figma">
-      <img src="" alt="Adobe Illustrator">
-      <img src="" alt="Visual Studio Code">
-      <img src="" alt="Effect House">
-      <img src="" alt="Blender">
+      <img src="img/Figma.png" alt="Figma">
+      <img src="img/AdobeIllustrator.png" alt="Adobe Illustrator">
+      <img src="img/VisualStudioCode.png" alt="Visual Studio Code">
+      <img src="img/EffectHouse.png" alt="Effect House">
+      <img src="img/Blender.png" alt="Blender">
     </div>
   </section>
 
@@ -103,15 +118,68 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Stuur mij een mail: <a href="mailto:fienishline@outlook.com">fienishline@outlook.com</a></p>
-  </section>
+<section class="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <span class="icon">📧</span>
+      <p>Fienishline@outlook.com</p>
+    </div>
+    <div class="contact-item">
+      <span class="icon">📍</span>
+      <p>Dendermonde</p>
+    </div>
+  </div>
+
+  <form class="contact-form">
+    <label for="name">Naam:</label>
+    <input type="text" id="name" name="name" placeholder="Voornaam + achternaam" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+
+    <label for="message">Bericht:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Bericht" required></textarea>
+
+    <button type="submit">Verstuur</button>
+  </form>
+</section>
+
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Fienishline</p>
-  </footer>
+  <footer class="footer">
+  <div class="footer-content">
+    <!-- Logo -->
+    <div class="footer-logo">
+      <h2><span>Fien</span>ishline</h2>
+    </div>
+
+    <!-- Quick links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Over Mij</a></li>
+        <li><a href="#projects">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Socials -->
+    <div class="footer-socials">
+      <h3>Socials</h3>
+      <div class="social-icons">
+        <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="img/pinterest.svg" alt="Pinterest"></a>
+        <a href="#"><img src="img/GithubWit.png" alt="GitHub"></a>
+      </div>
+      <p>&copy; 2025 Fienishline</p>
+    </div>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
 </body>
