@@ -158,7 +158,25 @@ body {
   text-decoration: none;
 }
 
+/*Foodtruck*/
+/* simpele gallery grids */
+.gallery { display:grid; gap:1rem; }
+.grid-2 { grid-template-columns:1fr; }
+.grid-3 { grid-template-columns:1fr; }
+@media (min-width: 700px){
+  .grid-2 { grid-template-columns:1fr 1fr; }
+  .grid-3 { grid-template-columns:repeat(3, 1fr); }
+}
 
+/* before/after compare slider */
+.compare {
+  position: relative;
+  max-width: 980px;
+  margin: 1rem auto;
+}
+
+.project-footer { text-align:center; padding:2rem; background:#0f0f14; }
+.project-footer a { color:#fff; text-decoration:none; }
 
 /*Footer*/
 .footer {
