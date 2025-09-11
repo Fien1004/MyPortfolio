@@ -16,10 +16,10 @@
     <div class="menu-overlay">
       <button class="close">&times;</button>
       <ul class="menu-links">
-        <li><a href="#">Home <span>→</span></a></li>
-        <li><a href="#">Over Mij <span>→</span></a></li>
-        <li><a href="#">Projecten <span>→</span></a></li>
-        <li><a href="#">Contacten <span>→</span></a></li>
+        <li><a href="Index.html#home">Home <span>→</span></a></li>
+        <li><a href="Index.html#about">Over Mij <span>→</span></a></li>
+        <li><a href="Index.html#projects">Projecten <span>→</span></a></li>
+        <li><a href="Index.html#contact">Contacten <span>→</span></a></li>
       </ul>
   
       <div class="socials">
@@ -32,7 +32,7 @@
   </nav>
 
   <!-- Hero section -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-text">
     <h3>Hallo, ik ben</h3>
     <h1><span class="highlight">Fien Wouters</span></h1>
@@ -46,10 +46,10 @@ Met oog voor detail en een creatieve aanpak breng ik ideeën tot leven in design
       <a href="cv.pdf" class="btn secondary">⬇️ Download CV</a>
     </div>
     <div class="hero-socials">
-        <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-        <a href="#"><img src="img/pinterest.svg" alt="Pinterest"></a>
-        <a href="#"><img src="img/github.svg" alt="GitHub"></a>
+        <a href="Index.html#home"><img src="img/instagram.svg" alt="Instagram"></a>
+        <a href="Index.html#about"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="Index.html#projects"><img src="img/pinterest.svg" alt="Pinterest"></a>
+        <a href="Index.html#contact"><img src="img/github.svg" alt="GitHub"></a>
     </div>
   </div>
 
@@ -60,7 +60,7 @@ Met oog voor detail en een creatieve aanpak breng ik ideeën tot leven in design
 
 
   <!-- Over mij -->
-<section class="about">
+<section class="about" id="about">
   <h2>Over mij</h2>
   <p>
    Ik ben momenteel student Digital Experience Design aan Thomas More, waar ik mijn passie voor design verder ontwikkel.
@@ -101,24 +101,47 @@ Buiten design ben ik altijd nieuwsgierig om nieuwe tools en technieken te leren 
   </section>
 
   <!-- Projecten overzicht -->
-  <section id="projects">
-    <h2>Projecten</h2>
-    <div class="project-grid">
+<section class="projects-slider" id="projects">
+  <h2>Mijn Projecten</h2>
+  <div class="slider-container">
+    <button class="slide-btn prev">&#10094;</button>
+    <div class="slider">
+      <!-- project card -->
       <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Korte uitleg</p>
-        <a href="project1.html">Lees meer</a>
+        <a href="projects/vias.html">
+          <img src="img/Mockup_vias.png" alt="VIAS project">
+          <h3>VIAS – TikTok Filter</h3>
+        </a>
       </div>
+
       <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Korte uitleg</p>
-        <a href="project2.html">Lees meer</a>
+        <a href="projects/autoworld.html">
+          <img src="img/cars_autoworld.png" alt="Autoworld project">
+          <h3>Autoworld – VR Experience</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects/foodtruck.html">
+          <img src="img/Foodkiosk/Foodkiosk1.png" alt="Foodtruck">
+          <h3>3D Foodtruck Design</h3>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="projects/giveadam.html">
+          <img src="img/Giveadamn/Logo_final.png" alt="Give a Damn">
+          <h3>Give a Damn – App Concept</h3>
+        </a>
       </div>
     </div>
-  </section>
+    <button class="slide-btn next">&#10095;</button>
+  </div>
+</section>
+
 
   <!-- Contact -->
-<section class="contact">
+<section class="contact" id="contact">
   <h2>Contact</h2>
 
   <div class="contact-info">
@@ -159,10 +182,10 @@ Buiten design ben ik altijd nieuwsgierig om nieuwe tools en technieken te leren 
     <div class="footer-links">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Over Mij</a></li>
-        <li><a href="#projects">Projecten</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="Index.html#home">Home</a></li>
+        <li><a href="Index.html#about">Over Mij</a></li>
+        <li><a href="Index.html#projects">Projecten</a></li>
+        <li><a href="Index.html#contact">Contact</a></li>
       </ul>
     </div>
 
