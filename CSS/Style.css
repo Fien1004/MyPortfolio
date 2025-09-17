@@ -530,12 +530,12 @@ p{
 
   .nav-links li a {
     text-decoration: none;
-    color: #000; /* pas aan naar je kleur */
+    color: #000;
     font-weight: 500;
   }
 
   .nav-links li a:hover {
-    color: #f97316; /* highlight kleur */
+    color: #f97316;
   }
 }
 

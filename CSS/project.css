@@ -51,6 +51,9 @@ p{
     font-weight: 600;
   }
   
+.nav-links {
+  display: none;
+}
   /* overlay menu */
   .menu-overlay {
     position: fixed;
@@ -251,4 +254,66 @@ body {
 .social-icons img:hover {
   transform: scale(1.1);
   filter: none; /* originele kleur bij hover */
+}
+
+/* Tablet */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+
+      .hero {
+    flex-direction: row; /* zet tekst en foto naast elkaar */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1; /* neemt beschikbare ruimte */
+  }
+
+  .hero-img {
+    flex: 0 0 250px; /* vaste breedte voor foto */
+    margin-top: 0;   /* verwijder margin van mobile */
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+    .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  }
+  
+/* Desktop */
+@media (min-width: 768px) {
+  .hamburger, .menu-overlay {
+    display: none; /* geen hamburger of overlay */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+
+  .nav-links li a:hover {
+    color: #f97316;
+  }
 }
