@@ -152,9 +152,15 @@ p{
 }
 
 .hero-buttons {
+  height: 50px;
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.hero-buttons a img {
+  width: 30px;
+  vertical-align: middle;
 }
 
 .btn {
@@ -201,7 +207,6 @@ p{
 
 /*Over Mij*/
 .about {
-  margin: 2rem auto;
   padding: 1rem;
 }
 
@@ -281,8 +286,7 @@ p{
 /* Projects */
 
 .projects-slider {
-  max-width: 1100px;
-  margin: 3rem auto;
+  max-width: 100%;
   padding: 0 1rem;
 }
 
@@ -298,6 +302,7 @@ p{
 }
 
 .slider {
+  height: 270px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -370,6 +375,10 @@ p{
   margin-bottom: 0.5rem;
 }
 
+.icon img {
+  width: 30px;
+}
+
 .contact-item .icon {
   background-color: #f97316; /* oranje */
   color: white;
@@ -378,6 +387,7 @@ p{
   border-radius: 50%;
   margin-right: 0.5rem;
 }
+
 
 /* formulier */
 .contact-form {
