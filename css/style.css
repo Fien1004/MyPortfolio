@@ -36,10 +36,9 @@ p{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
   }
 
-  .logo {
-    font-size: 2.5rem;
-    font-weight: 600;
-    cursor: pointer;
+  .logo img {
+    width: 250px;
+    height: auto;
   }
   
   .hamburger, .close {
@@ -176,10 +175,21 @@ p{
   color: #fff;
 }
 
+.btn.primary:hover {
+  background-color: #fff;
+    border: 2px solid #f97316;
+  color: #f97316;
+}
+
 .btn.secondary {
   background-color: #fff;
   border: 2px solid #f97316;
   color: #f97316;
+}
+
+.btn.secondary:hover {
+  background-color: #f97316;
+  color: #fff;
 }
 
 .hero-socials {
@@ -190,19 +200,25 @@ p{
 .hero-socials img {
   width: 28px;
   height: 28px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.hero-socials img:hover {
+  transform: scale(1.1);
+  filter: none;
 }
 
 .hero-img {
-  flex: 1;                  /* neemt ook ruimte */
+  flex: 1;
   display: flex;
-  justify-content: center;  /* foto centreren */
+  justify-content: center;
 }
 
 .hero-img img {
   max-width: 60%;
   height: auto;
   margin-top: 1.5rem;
-  border-radius: 12px; /* optioneel */
+  border-radius: 12px;
 }
 
 /*Over Mij*/
@@ -268,6 +284,17 @@ p{
 
 .skills-grid li {
   margin-bottom: 0.5rem;
+  background-color: #f97316; /* oranje */
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.skills-grid li:hover {
+  background-color: #0f0f14;
+  cursor: pointer;
 }
 
 /* Hard skills */
@@ -281,6 +308,12 @@ p{
   width: 40px;
   height: 40px;
   object-fit: contain;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  filter: none;
 }
 
 /* Projects */
@@ -381,65 +414,28 @@ p{
 
 .contact-item .icon {
   background-color: #f97316; /* oranje */
-  color: white;
-  font-size: 1.2rem;
   padding: 0.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
 
 
-/* formulier */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 50%;
-}
-
-.contact-form label {
-  font-weight: bold;
-  margin-bottom: 0.2rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fafafa;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  background-color: #f97316; /* oranje */
-  color: white;
-  border: none;
-  padding: 0.9rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #e05d0d; /* donkerder oranje */
-}
-
 /*Footer*/
 .footer {
   background-color: #0f0f14; /* donkergrijs/zwart */
   color: #fff;
   margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .footer-content {
-    padding: 2rem;
-  max-width: 100%;
+  padding: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+    gap: 2rem;
 }
 
 /* Logo */
@@ -493,9 +489,8 @@ p{
 
 .social-icons img:hover {
   transform: scale(1.1);
-  filter: none; /* originele kleur bij hover */
+  filter: none;
 }
-
 
 
   /* Tablet */
@@ -505,36 +500,37 @@ p{
     }
 
       .hero {
-    flex-direction: row; /* zet tekst en foto naast elkaar */
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .hero-text {
-    flex: 1; /* neemt beschikbare ruimte */
+    flex: 1;
   }
 
   .hero-img {
-    flex: 0 0 250px; /* vaste breedte voor foto */
-    margin-top: 0;   /* verwijder margin van mobile */
+    flex: 0 0 250px;
+    margin-top: 0;
   }
 
   .hero-img img {
     width: 100%;
     max-width: 250px;
   }
-  
-    .footer-content {
+      .footer-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-right: 25px;
   }
   }
   
 /* Desktop */
 @media (min-width: 768px) {
+
   .hamburger, .menu-overlay {
-    display: none; /* geen hamburger of overlay */
+    display: none;
   }
 
   .navbar {
@@ -591,6 +587,9 @@ p{
   .skills {
     flex: 1;
   }
+
+
+
 }
 
   
